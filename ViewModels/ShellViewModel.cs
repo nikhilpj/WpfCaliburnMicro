@@ -15,13 +15,38 @@ namespace WpfUI.ViewModels
             
             get {
 
-                return _fname="Nikhil jose";
+                return _fname;
             }
 
             set {
 
                 _fname = value;
-                   
+                NotifyOfPropertyChange(() => FirstName);
+                NotifyOfPropertyChange(() => FullName);
+            }
+        }
+
+        private string _lastName;
+        public string LastName
+        {
+            get
+            {
+                return _lastName;
+            }
+
+            set
+            {
+                _lastName = value;
+                NotifyOfPropertyChange(() => LastName);
+                NotifyOfPropertyChange(() => FullName);
+            }
+        }
+
+        public string FullName
+        {
+            get
+            {
+                return $"{FirstName} {LastName}";
             }
         }
     }
