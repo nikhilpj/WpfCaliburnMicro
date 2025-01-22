@@ -88,10 +88,15 @@ namespace WpfUI.ViewModels
             }
         }
 
-        public void ClearText()
+        public void ClearText(string firstname, string lastname)
         {
             FirstName = "";
             LastName = "";
+        }
+
+        public bool CanClearText(string firstname, string lastname)
+        {
+            return !string.IsNullOrWhiteSpace(firstname) || !string.IsNullOrWhiteSpace(lastname);
         }
     }
 }
