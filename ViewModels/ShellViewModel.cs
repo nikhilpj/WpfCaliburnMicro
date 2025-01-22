@@ -87,5 +87,11 @@ namespace WpfUI.ViewModels
                 NotifyOfPropertyChange(()=> SelectedPerson);
             }
         }
+
+        public void ClearText()
+        {
+            FirstName = "";
+            LastName = "";
+        }
     }
 }
