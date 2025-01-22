@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace WpfUI.Models
 {
-    internal class PersonModel
+    public class PersonModel
     {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
     }
 }
