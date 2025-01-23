@@ -8,7 +8,7 @@ using WpfUI.Models;
 
 namespace WpfUI.ViewModels
 {
-    public class ShellViewModel : Screen
+    public class ShellViewModel : Conductor<object>
     {
         private string _fname ;
         private string _lastName;
@@ -97,6 +97,15 @@ namespace WpfUI.ViewModels
         public bool CanClearText(string firstname, string lastname)
         {
             return !string.IsNullOrWhiteSpace(firstname) || !string.IsNullOrWhiteSpace(lastname);
+        }
+
+        public void LoadPageOne()
+        {
+            ActivateItem(new FirstChildViewModel());
+        }
+        public void LoadPageTwo()
+        {
+            ActivateItem(new SecondChildViewModel());
         }
     }
 }

@@ -28,17 +28,27 @@
         </Grid.RowDefinitions>
         <!--Row 1-->
 
-            <TextBlock Text="{Binding Path=FullName}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
+            <TextBlock Text="{Binding Path=FullName}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="2"/>
 
         <!--Row 2-->
-            <TextBox MinWidth="100" Grid.Row="2" Grid.Column="1" x:Name="FirstName"></TextBox>
-        <TextBox MinWidth="100" Grid.Row="2" Grid.Column="2" x:Name="LastName"></TextBox>
+            <TextBox MinWidth="100" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" x:Name="FirstName" Margin="2"></TextBox>
+        <TextBox MinWidth="100" Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" x:Name="LastName" Margin="2"></TextBox>
 
         <!--Row 3-->
-        <ComboBox Grid.Row="3" Grid.Column="1" x:Name="People" SelectedItem="{Binding Path=SelectedPerson, Mode=OneWayToSource}" DisplayMemberPath="FirstName"></ComboBox>
-        <TextBlock Grid.Row="3" Grid.Column="2" x:Name="SelectedPerson_LastName"></TextBlock>
+        <ComboBox Grid.Row="3" Grid.Column="1" Margin="2" x:Name="People" SelectedItem="{Binding Path=SelectedPerson, Mode=OneWayToSource}" DisplayMemberPath="FirstName"></ComboBox>
+        <TextBlock Grid.Row="3" Grid.Column="2" Margin="2" x:Name="SelectedPerson_LastName"></TextBlock>
 
+        
         <!--Row 4-->
-        <Button Grid.Row="4" Grid.Column="1" x:Name="ClearText">Clear Name</Button>
+        <Button Grid.Row="4" Grid.Column="1" Margin="2" x:Name="ClearText">Clear Name</Button>
+        
+        
+        <!--Row 5-->
+        <Button x:Name="LoadPageOne" Grid.Row="5" Grid.Column="1" Margin="2">Load Page one</Button>
+        <Button x:Name="LoadPageTwo" Grid.Row="5" Grid.Column="2" Margin="2">Load Page two</Button>
+        
+        
+        <!--Row 6-->
+        <ContentControl Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="5" x:Name="ActiveItem"></ContentControl>
     </Grid>
 </Window>

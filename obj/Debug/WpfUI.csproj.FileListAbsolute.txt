@@ -25,3 +25,7 @@ C:\Users\Lenovo\Desktop\Nikhil\WpfCm1\WpfCM1\WpfUI\obj\Debug\WpfUI.csproj.CoreCo
 C:\Users\Lenovo\Desktop\Nikhil\WpfCm1\WpfCM1\WpfUI\obj\Debug\WpfUI.csproj.Up2Date
 C:\Users\Lenovo\Desktop\Nikhil\WpfCm1\WpfCM1\WpfUI\obj\Debug\WpfUI.exe
 C:\Users\Lenovo\Desktop\Nikhil\WpfCm1\WpfCM1\WpfUI\obj\Debug\WpfUI.pdb
+C:\Users\Lenovo\Desktop\Nikhil\WpfCm1\WpfCM1\WpfUI\obj\Debug\Views\FirstChildView.g.cs
+C:\Users\Lenovo\Desktop\Nikhil\WpfCm1\WpfCM1\WpfUI\obj\Debug\Views\SecondChildView.g.cs
+C:\Users\Lenovo\Desktop\Nikhil\WpfCm1\WpfCM1\WpfUI\obj\Debug\Views\FirstChildView.baml
+C:\Users\Lenovo\Desktop\Nikhil\WpfCm1\WpfCM1\WpfUI\obj\Debug\Views\SecondChildView.baml
