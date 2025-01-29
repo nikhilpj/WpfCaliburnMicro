@@ -30,7 +30,7 @@
 
             <TextBlock Text="{Binding Path=FullName}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Margin="2"/>
 
-        <Button Grid.Row="1" Grid.Column="4" Command="{Binding AddPerson}" Content="AddPerson"></Button>
+        <Button Grid.Row="1" Grid.Column="4"  Content="AddPerson"></Button>
         <Button Grid.Row="1" Grid.Column="5">Edit </Button>
 
         <!--Row 2-->

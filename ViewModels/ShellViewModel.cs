@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Input;
+using WpfUI.Commands;
 using WpfUI.Models;
 
 namespace WpfUI.ViewModels
@@ -60,17 +63,33 @@ namespace WpfUI.ViewModels
             People.Add(new PersonModel { FirstName = "Tim", LastName = "corey" });
             People.Add(new PersonModel { FirstName = "jim", LastName = "Han" });
             People.Add(new PersonModel { FirstName = "Lee", LastName = "Han" });
+
+
+            AddWindowCommand = new RelayCommand(AddWindow, CanAddWindow);
         }
 
-        public void AddPerson()
+        private bool CanAddWindow(object obj)
         {
-            if(!string.IsNullOrWhiteSpace(FirstName) && !string.IsNullOrWhiteSpace(LastName))
-            {
-                People.Add(new PersonModel { FirstName = FirstName, LastName = LastName });
-                FirstName = "";
-                LastName = "";
-            }
+            return true;
         }
+
+        private void AddWindow(object obj)
+        {
+            
+        }
+
+        //public void AddPerson()
+        //{
+        //    MessageBox.Show("function entered");
+        //    if(!string.IsNullOrWhiteSpace(FirstName) && !string.IsNullOrWhiteSpace(LastName))
+        //    {
+        //        People.Add(new PersonModel { FirstName = FirstName, LastName = LastName });
+        //        FirstName = "";
+        //        LastName = "";
+        //    }
+        //}
+
+        public ICommand AddWindowCommand { get; set; }
         public BindableCollection<PersonModel> People
         {
             get
