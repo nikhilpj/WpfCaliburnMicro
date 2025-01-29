@@ -49,8 +49,8 @@
 
                     </Border>
                     <TextBlock Text="ui design" HorizontalAlignment="Center"
-                                   Foreground="#ffffff" FontSize="30"
-                                   FontFamily="oswald" Margin="30 20 0 0">
+                                   Foreground="#ffffff" FontSize="28"
+                                   FontFamily="oswald" Margin="30 20 0 0" Height="80" Width="130">
 
                     </TextBlock>
                 </Grid>

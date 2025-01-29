@@ -61,6 +61,16 @@ namespace WpfUI.ViewModels
             People.Add(new PersonModel { FirstName = "jim", LastName = "Han" });
             People.Add(new PersonModel { FirstName = "Lee", LastName = "Han" });
         }
+
+        public void AddPerson()
+        {
+            if(!string.IsNullOrWhiteSpace(FirstName) && !string.IsNullOrWhiteSpace(LastName))
+            {
+                People.Add(new PersonModel { FirstName = FirstName, LastName = LastName });
+                FirstName = "";
+                LastName = "";
+            }
+        }
         public BindableCollection<PersonModel> People
         {
             get
